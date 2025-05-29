@@ -1,1 +1,24 @@
-# Data_Job_automation
+# 🏠 Data Job Automation – Zillow Property Scraper(Zillow Clone)
+-This project automates the extraction of property listings from Zillow and submits the data (price, address, and property link) into a Google Form, which is then stored in a Google Spreadsheet for easy viewing and further analysis.
+- 🚀 Project Overview
+- 🔹 Step 1: Web Scraping Zillow
+  - Use the requests module to fetch HTML content from Zillow.
+  - Parse the page with BeautifulSoup to extract:
+      - Property
+      - addresses
+      - Prices
+      - Property links
+  
+- 🔹 Step 2: Data Cleaning
+  - Extract data from HTML elements like <a> tags using class names.
+  - Clean the data using .replace():
+      - Remove characters such as "|", "/mo", "+", "1bd" from prices.
+      - Format addresses appropriately for better readability.
+- 🔹 Step 3: Data Entry Using Selenium
+  - Loop through each property and:
+      - Locate address, price, and link fields using XPath.
+      - Fill in the data using .send_keys().
+      - Submit each entry using the .click() method on the Submit button.
+- 🔹 Step 4: View and Download Data
+  - All submitted entries are stored in a linked Google Spreadsheet.
+  - The spreadsheet can be downloaded for further processing or reporting.
