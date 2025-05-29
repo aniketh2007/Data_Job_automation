@@ -32,7 +32,7 @@ driver = webdriver.Chrome(options=chrome_options)
 
 
 for n in range(len(Property_links)):
-    driver.get("https://docs.google.com/forms/d/e/1FAIpQLSdQE34uSwJoPhUXVsILlQY2qSvlxCcpjL2gLSL2sjk7-Q7PaA/viewform?usp=header")
+    driver.get("YOUR_GOOGLE_SHEET_URL")
     time.sleep(5)
 
     address = driver.find_element(By.XPATH, '//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input')
