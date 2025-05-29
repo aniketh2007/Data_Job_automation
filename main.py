@@ -30,7 +30,7 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=chrome_options)
 
-time.sleep(10)
+
 for n in range(len(Property_links)):
     driver.get("https://docs.google.com/forms/d/e/1FAIpQLSdQE34uSwJoPhUXVsILlQY2qSvlxCcpjL2gLSL2sjk7-Q7PaA/viewform?usp=header")
     time.sleep(5)
